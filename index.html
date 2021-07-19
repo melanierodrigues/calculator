@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator M&M</title>
+</head>
+<body>
+    <main>
+        <div class="forma-calculadora">
+            <div class="forma-resultado">
+                <input id="reservatorio" type="text" placeholder="reservatório"></input><br>
+                <input id="resultado" type="text" readonly></input>
+                <div class="painel-solar">
+                    <input type="text" id="painel-solar_quadrado"></input>
+                    <input type="text" id="painel-solar_quadrado"></input>
+                    <input type="text" id="painel-solar_quadrado"></input>
+                </div>
+            </div>
+
+
+            <div class="display-button">
+                <table >
+                    <tr>
+                    <td><button style="font-size: 18px" id="btn-amarelo" class="botao" onclick="raizQuadrada()">&#8730<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-laranja" class="botao" onclick="mc()">MC<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="mr()">MR<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-amarelo" class="botao" onclick="mMenos()">M-<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="mMais()">M+<br/><br/></button></td>
+                    </tr>
+                    <tr>
+                    <td><button style="font-size: 23px" id="btn-vermelho" class="botao" onclick="percentagem()">%<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`7`)">7<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" id="tecla" class="botao" onclick="numero(`8`)">8<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`9`)">9<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde"class="botao" onclick="divisao()">&#xF7<br/><br/></button></td>
+                    </tr>
+                    <tr>
+                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="maisMenos()">+/-<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`4`)">4<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`5`)">5<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`6`)">6<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="multiplicacao()">&#215<br/><br/></button></td>
+                    </tr>
+                    <tr>
+                    <td><button style="font-size: 22px" id="btn-vermelho" class="botao" onclick="limpar()">C<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`1`)">1<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`2`)">2<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`3`)">3<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="subtracao()">-<br/><br/></button></td>
+                    </tr>
+                    <tr>
+                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="onCe()">CE<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero0()">0<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="ponto()">.<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="igual()">=<br/><br/></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" class="botao" onclick="adicao()">+<br/><br/></button></td>
+                    </tr>
+                    </table>
+            </div>
+
+            
+
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="https://github.com/melanierodrigues" id="by" target="_blank">Developed by Mélanie Rodrigues</a>
+    </footer>
+    
+</body>
+</html>
