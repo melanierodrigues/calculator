@@ -5,7 +5,7 @@ let displayResultado = document.getElementById(`resultado`);
 function numero(valor1){
     document.getElementById(`resultado`).value += valor1;
     if(document.getElementById(`resultado`).value.includes("=")){
-        document.getElementById(`resultado`).value = valor1;
+    document.getElementById(`resultado`).value = valor1;
     }
 }
 
