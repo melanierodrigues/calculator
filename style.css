@@ -85,7 +85,7 @@ main {
     background-color: #888b8a;
     font-family: var(--font-resultado);
     text-align: right;
-    font-size: clamp(12px, 28px, 30px);
+    font-size: clamp(5px, 28px, 30px);
     border: 6px inset rgb(65, 65, 65);
     outline: 13px inset #ffd573;
     display: relative;

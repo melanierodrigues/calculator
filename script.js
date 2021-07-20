@@ -9,6 +9,7 @@ function numero(valor1){
     }
 }
 
+
 // Número 0
 function numero0(){
     const displayResultado = document.getElementById(`resultado`).value;
