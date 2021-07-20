@@ -14,6 +14,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Outra";
+    src: url("Font/DS-DIGI.TTF");
+    font-weight: normal;
+}
+
 :root{
     --font-padrão: "Letras", cursive;
     --font-resultado: "Display", cursive;
@@ -315,7 +321,7 @@ footer{
 
 @media (max-width: 400px) {
     #resultado{
-        color: rgb(97, 92, 175);
-        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(241, 61, 15);
+        font-family: "Outra";
     }
 }
