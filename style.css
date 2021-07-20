@@ -78,18 +78,19 @@ main {
 }
 
 #resultado{
-    min-height: 30px;
+    height: 30px;
     width: 170px;
-    justify-content: center;
-    align-items: center;
     background-color: #888b8a;
     font-family: var(--font-resultado);
     text-align: right;
-    font-size: clamp(5px, 28px, 30px);
+    font-size: 28px;
     border: 6px inset rgb(65, 65, 65);
     outline: 13px inset #ffd573;
     display: relative;
     border-radius: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .painel-solar{
@@ -309,4 +310,12 @@ footer{
 
 #by:hover{
     color: rgb(134, 100, 19);
+}
+
+
+@media (max-width: 400px) {
+    #resultado{
+        color: rgb(224, 99, 214);
+        font-size: 100%;
+    }
 }
