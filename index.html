@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculator Vintage M&M´s - 1993">
+    <meta name="author" content="Mélanie Rodrigues">
+    <meta name="keywords" content="calculator, M&M´s, js">
+    <meta name="robots" content="index,nofollow">
+    
+
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculator M&M</title> 
@@ -25,39 +31,39 @@
             <div class="display-button">
                 <table >
                     <tr>
-                    <td><button style="font-size: 18px" id="btn-amarelo" class="botao" onclick="raizQuadrada()">&#8730<br/><br/></button></td>
-                    <td><button style="font-size: 22px" id="btn-laranja" class="botao" onclick="mc()">MC<br/><br/></button></td>
-                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="mr()">MR<br/><br/></button></td>
-                    <td><button style="font-size: 22px" id="btn-amarelo" class="botao" onclick="mMenos()">M-<br/><br/></button></td>
-                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="mMais()">M+<br/><br/></button></td>
+                    <td><button style="font-size: 18px" id="btn-amarelo" class="botao" onclick="raizQuadrada()"> <p id="conteudo1">&#8730</p></button></td>
+                    <td><button style="font-size: 22px" id="btn-laranja" class="botao" onclick="mc()"><p id="conteudo">MC</p></button></td>
+                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="mr()"><p id="conteudo">MR</p></button></td>
+                    <td><button style="font-size: 22px" id="btn-amarelo" class="botao" onclick="mMenos()"><p id="conteudo">M-</p></button></td>
+                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="mMais()"><p id="conteudo">M+</p></button></td>
                     </tr>
                     <tr>
-                    <td><button style="font-size: 23px" id="btn-vermelho" class="botao" onclick="percentagem()">%<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`7`)">7<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-vermelho" id="tecla" class="botao" onclick="numero(`8`)">8<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`9`)">9<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-verde"class="botao" onclick="divisao()">&#xF7<br/><br/></button></td>
+                    <td><button style="font-size: 23px" id="btn-vermelho" class="botao" onclick="percentagem()"><p id="conteudo2">%</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`7`)"><p id="conteudonumero">7</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" id="tecla" class="botao" onclick="numero(`8`)"><p id="conteudonumero">8</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`9`)"><p id="conteudonumero">9</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde"class="botao" onclick="divisao()"><p id="conteudosimbolo">&#xF7</p></button></td>
                     </tr>
                     <tr>
-                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="maisMenos()">+/-<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`4`)">4<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`5`)">5<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`6`)">6<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="multiplicacao()">&#215<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-castanho" class="botao" onclick="maisMenos()"><p id="conteudo2">+/-</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`4`)"><p id="conteudonumero">4</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`5`)"><p id="conteudonumero">5</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" id="tecla" class="botao" onclick="numero(`6`)"><p id="conteudonumero">6</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="multiplicacao()"><p id="conteudosimbolo">&#215</p></button></td>
                     </tr>
                     <tr>
-                    <td><button style="font-size: 22px" id="btn-vermelho" class="botao" onclick="limpar()">C<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`1`)">1<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`2`)">2<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`3`)">3<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="subtracao()">-<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-vermelho" class="botao" onclick="limpar()"><p id="conteudoC">C</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" id="tecla" class="botao" onclick="numero(`1`)"><p id="conteudonumero">1</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero(`2`)"><p id="conteudonumero">2</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-verde" id="tecla" class="botao" onclick="numero(`3`)"><p id="conteudonumero">3</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="subtracao()"><p id="conteudosimbolo">-</p></button></td>
                     </tr>
                     <tr>
-                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="onCe()">CE<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero0()">0<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="ponto()">.<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="igual()">=<br/><br/></button></td>
-                    <td><button style="font-size: 25px" id="btn-amarelo" class="botao" onclick="adicao()">+<br/><br/></button></td>
+                    <td><button style="font-size: 22px" id="btn-verde" class="botao" onclick="onCe()"><p id="conteudo2">CE</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-castanho" id="tecla" class="botao" onclick="numero0()"><p id="conteudonumero">0</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-laranja" class="botao" onclick="ponto()"><p id="conteudonumero">.</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-vermelho" class="botao" onclick="igual()"><p id="conteudonumero">=</p></button></td>
+                    <td><button style="font-size: 25px" id="btn-amarelo" class="botao" onclick="adicao()"><p id="conteudosimbolo">+</p></button></td>
                     </tr>
                     </table>
             </div>

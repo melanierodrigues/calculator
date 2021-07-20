@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+/*font-family: 'Yellowtail', cursive;*/
+
+
 @font-face {
     font-family: "Letras";
     src: url("Font/freestyle-script.ttf");
@@ -32,22 +36,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     background-size: contain;
 }
 
 .forma-calculadora {
-    height: 520px;
     width: 300px;
+    max-height: 520px;
     border-radius: 10px 10px 25px 25px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: #ffc540;
     background: linear-gradient(170deg, rgb(255, 220, 137) 0%, rgba(255,197,64,1) 40%, rgb(230, 178, 58) 100%);
-    margin: auto;
-    margin-top: 50px;
-    padding: 0px;
+    margin-top: 70px;
     border: 5px double #f8c54e;
     box-shadow: 1px 5px rgba(0, 0, 0, 0.15);
 }
@@ -60,14 +61,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    padding-top: 25px;
-    margin: 0px;
-    background-color: rgba(52, 45, 117, 0);
-    text-align: left;
     background-image: url(img/Este_3.png);
     background-size: contain;
     background-repeat: no-repeat;
+    padding-top: 25px;
 }
 
 #reservatorio{
@@ -88,7 +85,7 @@ main {
     background-color: #888b8a;
     font-family: var(--font-resultado);
     text-align: right;
-    font-size: 30px;
+    font-size:xx-large;
     border: 6px inset rgb(65, 65, 65);
     outline: 13px inset #ffd573;
     display: relative;
@@ -121,10 +118,8 @@ main {
 .display-button{
     width: 300px;
     height: 300px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
     background-color: rgba(90, 129, 51, 0);
 }
 
@@ -134,12 +129,13 @@ table{
     display: table;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 25px;
+    padding-bottom: 30px;
     padding-top: 0px;
     margin-bottom: 40px;
+    margin-top: -20px;
+    position: absolute;
 }
 
 .botao{
@@ -160,6 +156,66 @@ table{
 
 .botao:hover{
     cursor: pointer;
+}
+
+#conteudo{
+    font-size: 22px;
+    position: absolute;
+    margin-bottom: 24px;
+    margin-left: -10px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+#conteudo1{
+    font-size: 20px;
+    position: absolute;
+    margin-bottom: 19px;
+    margin-left: -10px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+#conteudonumero{
+    font-size: 29px;
+    position: absolute;
+    margin-bottom: 19px;
+    margin-left: -5px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+#conteudosimbolo{
+    font-size: 33px;
+    position: absolute;
+    margin-bottom: 17px;
+    margin-left: -5px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+#conteudoC{
+    font-size: 23px;
+    position: absolute;
+    margin-bottom: 22px;
+    margin-left: -5px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+#conteudo2{
+    font-size: 21px;
+    position: absolute;
+    margin-bottom: 22px;
+    margin-left: -10px;
+    color: #5e4543;
+    font-family: var(--font-padrão);
+    font-weight: bold;
 }
 
 #btn-amarelo{
@@ -209,7 +265,7 @@ table{
 #btn-verde{
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(2,133,35,1) 36%, rgba(1,68,18,1) 55%, rgba(0,38,10,1) 100%); 
+    background: url(img/btnM-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(2,133,35,1) 36%, rgb(2, 104, 27) 55%, rgb(5, 68, 22) 100%); 
     background-size:cover;                   
 }
 
@@ -225,7 +281,7 @@ table{
     background-color: #391b06;
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(57,27,6,1) 36%, rgba(34,16,4,1) 55%, rgba(27,12,2,1) 100%);  
+    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgb(100, 48, 11) 36%, rgba(57,27,6,1) 55%, rgb(114, 51, 9) 100%);  
     background-size:cover;                      
 }
 
