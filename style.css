@@ -78,7 +78,7 @@ main {
 }
 
 #resultado{
-    height: 30px;
+    min-height: 30px;
     width: 170px;
     justify-content: center;
     align-items: center;
