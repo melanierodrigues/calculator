@@ -85,7 +85,7 @@ main {
     background-color: #888b8a;
     font-family: var(--font-resultado);
     text-align: right;
-    font-size:xx-large;
+    font-size: calc(1em + 3vw);
     border: 6px inset rgb(65, 65, 65);
     outline: 13px inset #ffd573;
     display: relative;
