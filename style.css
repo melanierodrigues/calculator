@@ -22,7 +22,7 @@
 
 :root{
     --font-padrão: "Letras", cursive;
-    --font-resultado: "Display", cursive;
+    --font-resultado: "Outra", cursive;
 }
 
 *{
@@ -316,12 +316,4 @@ footer{
 
 #by:hover{
     color: rgb(134, 100, 19);
-}
-
-
-@media (max-width: 400px) {
-    #resultado{
-        color: rgb(241, 61, 15);
-        font-family: "Outra";
-    }
 }
