@@ -311,7 +311,7 @@ footer{
     color: rgb(134, 100, 19);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     #resultado {
       background: blue;
       font-size: 9px;
