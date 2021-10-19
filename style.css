@@ -310,10 +310,13 @@ table{
 }
 
 footer{
-    margin: auto;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 5vh 0px;
 }
 
 #by{
