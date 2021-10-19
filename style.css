@@ -36,6 +36,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -43,6 +44,7 @@ main {
     justify-content: center;
     align-items: center;
     background-size: contain;
+    height: calc(90vh - 40px);
 }
 
 .forma-calculadora {
@@ -54,7 +56,7 @@ main {
     justify-content: flex-start;
     background-color: #ffc540;
     background: linear-gradient(170deg, rgb(255, 220, 137) 0%, rgba(255,197,64,1) 40%, rgb(230, 178, 58) 100%);
-    margin-top: 70px;
+    margin-top: calc(45vh - 260px);
     border: 5px double #f8c54e;
     box-shadow: 1px 5px rgba(0, 0, 0, 0.15);
 }
