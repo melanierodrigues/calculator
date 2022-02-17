@@ -27,10 +27,6 @@ function numero0(){
 // C - Limpar
 function limpar(){
     document.getElementById(`resultado`).value = "";
-
-    calculo.valor1 = 0;
-    calculo.valor2 = 0;
-    calculo.funcaoParaCalcular = null;
 }
 
 // . - Ponto
