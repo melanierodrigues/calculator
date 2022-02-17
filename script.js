@@ -5,9 +5,10 @@ let displayResultado = document.getElementById(`resultado`);
 function numero(valor1){
     document.getElementById(`resultado`).value += valor1;
     if(document.getElementById(`resultado`).value.includes("=")){
-        document.getElementById(`resultado`).value = valor1;
+    document.getElementById(`resultado`).value = valor1;
     }
 }
+
 
 // Número 0
 function numero0(){
@@ -26,10 +27,6 @@ function numero0(){
 // C - Limpar
 function limpar(){
     document.getElementById(`resultado`).value = "";
-
-    calculo.valor1 = 0;
-    calculo.valor2 = 0;
-    calculo.funcaoParaCalcular = null;
 }
 
 // . - Ponto

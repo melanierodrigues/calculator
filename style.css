@@ -14,9 +14,15 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Outra";
+    src: url("Font/DS-DIGI.TTF");
+    font-weight: normal;
+}
+
 :root{
     --font-padrão: "Letras", cursive;
-    --font-resultado: "Display", cursive;
+    --font-resultado: "Outra", cursive;
 }
 
 *{
@@ -30,6 +36,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -37,6 +44,7 @@ main {
     justify-content: center;
     align-items: center;
     background-size: contain;
+    height: calc(90vh - 40px);
 }
 
 .forma-calculadora {
@@ -48,7 +56,8 @@ main {
     justify-content: flex-start;
     background-color: #ffc540;
     background: linear-gradient(170deg, rgb(255, 220, 137) 0%, rgba(255,197,64,1) 40%, rgb(230, 178, 58) 100%);
-    margin-top: 70px;
+    margin-top: calc(45vh - 260px);
+    margin-bottom: 5vh;
     border: 5px double #f8c54e;
     box-shadow: 1px 5px rgba(0, 0, 0, 0.15);
 }
@@ -80,16 +89,23 @@ main {
 #resultado{
     height: 30px;
     width: 170px;
-    justify-content: center;
-    align-items: center;
     background-color: #888b8a;
     font-family: var(--font-resultado);
     text-align: right;
-    font-size:xx-large;
+    font-size: 28px;
     border: 6px inset rgb(65, 65, 65);
     outline: 13px inset #ffd573;
     display: relative;
     border-radius: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .painel-solar{
@@ -141,7 +157,7 @@ table{
 .botao{
     width: 31px;
     height: 31px;
-    background-image: url(img/btnM-01.png);
+    background-image: url(img/btnM-01_2-01.png);
     background-size: cover;
     border-radius: 50%;
     display: flex;
@@ -152,6 +168,7 @@ table{
     color: #5e4543;
     font-family: var(--font-padrão);
     font-weight: bold;
+    user-select: none;
 }
 
 .botao:hover{
@@ -222,7 +239,7 @@ table{
     background-color: #ffc540;
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
     border: none;  
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 10%, rgba(255,197,64,1) 36%, rgba(211,165,58,1) 55%, rgba(191,136,6,1) 100%);  
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 10%, rgba(255,197,64,1) 36%, rgba(211,165,58,1) 55%, rgba(191,136,6,1) 100%);  
     background-size: cover;            
 }
 
@@ -230,49 +247,49 @@ table{
     background-color: #ffc540;
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
     border: none;  
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,197,64,1) 0%, rgba(255,197,64,1) 10%, rgba(255,197,64,1) 36%, rgba(211,165,58,1) 55%, rgb(138, 98, 5) 100%);  
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgba(255,197,64,1) 0%, rgba(255,197,64,1) 10%, rgba(255,197,64,1) 36%, rgba(211,165,58,1) 55%, rgb(138, 98, 5) 100%);  
     background-size: cover;            
 }
 
 #btn-vermelho{
     border: none;  
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background:url(img/btnM-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 0%, rgba(225,25,49,1) 36%, rgba(181,24,43,1) 55%, rgba(116,9,22,1) 100%); 
+    background:url(img/btnM-01_2-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 0%, rgba(225,25,49,1) 36%, rgba(181,24,43,1) 55%, rgba(116,9,22,1) 100%); 
     background-size:cover;                  
 }
 
 #btn-vermelho:hover{
     border: none;  
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background:url(img/btnM-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgb(143, 22, 36) 0%, rgb(143, 22, 36) 36%, rgb(112, 14, 24) 55%, rgb(31, 1, 4) 100%); 
+    background:url(img/btnM-01_2-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgb(143, 22, 36) 0%, rgb(143, 22, 36) 36%, rgb(112, 14, 24) 55%, rgb(31, 1, 4) 100%); 
     background-size:cover;                  
 }
 
 #btn-laranja{
     border: none;   
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(238,100,3,1) 36%, rgba(175,74,4,1) 55%, rgba(99,42,2,1) 100%); 
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(238,100,3,1) 36%, rgba(175,74,4,1) 55%, rgba(99,42,2,1) 100%); 
     background-size:cover;              
 }
 
 #btn-laranja:hover{
     border: none;   
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgb(165, 71, 3) 0%, rgb(165, 71, 3) 36%, rgb(107, 46, 2) 55%, rgb(51, 22, 1) 100%); 
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgb(165, 71, 3) 0%, rgb(165, 71, 3) 36%, rgb(107, 46, 2) 55%, rgb(51, 22, 1) 100%); 
     background-size:cover;              
 }
 
 #btn-verde{
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(2,133,35,1) 36%, rgb(2, 104, 27) 55%, rgb(5, 68, 22) 100%); 
+    background: url(img/btnM-01_2-01.png), linear-gradient(140deg, rgba(255,254,251,1) 0%, rgba(2,133,35,1) 36%, rgb(2, 104, 27) 55%, rgb(5, 68, 22) 100%); 
     background-size:cover;                   
 }
 
 #btn-verde:hover{
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png), linear-gradient(140deg, rgb(1, 92, 24) 0%, rgb(1, 92, 24) 36%, rgb(1, 48, 12) 55%, rgba(0,38,10,1) 100%); 
+    background: url(img/btnM-01_2-01.png), linear-gradient(140deg, rgb(1, 92, 24) 0%, rgb(1, 92, 24) 36%, rgb(1, 48, 12) 55%, rgba(0,38,10,1) 100%); 
     background-size:cover;                   
 }
 
@@ -281,7 +298,7 @@ table{
     background-color: #391b06;
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgb(100, 48, 11) 36%, rgba(57,27,6,1) 55%, rgb(114, 51, 9) 100%);  
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgba(255,254,251,1) 0%, rgb(100, 48, 11) 36%, rgba(57,27,6,1) 55%, rgb(114, 51, 9) 100%);  
     background-size:cover;                      
 }
 
@@ -289,15 +306,18 @@ table{
     background-color: #391b06;
     border: none; 
     box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
-    background: url(img/btnM-01.png),  linear-gradient(140deg, rgba(57,27,6,1) 0%, rgb(43, 20, 4) 36%, rgba(34,16,4,1) 55%, rgba(27,12,2,1) 100%);  
+    background: url(img/btnM-01_2-01.png),  linear-gradient(140deg, rgba(57,27,6,1) 0%, rgb(43, 20, 4) 36%, rgba(34,16,4,1) 55%, rgba(27,12,2,1) 100%);  
     background-size:cover;                      
 }
 
 footer{
-    margin: auto;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 5vh 0px;
 }
 
 #by{
